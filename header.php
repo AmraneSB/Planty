@@ -27,22 +27,22 @@
 
 	<?php do_action( 'ocean_before_outer_wrap' ); ?>
 
-
+<header>
 	
 	<div class="directionRow" id="headconteneur">
 		<nav>
-		<a href="http://localhost/projet6/"><img id="firstimg"  src="<?php echo (get_stylesheet_directory_uri()."/images/Logo.png"); ?>" alt="Planty"></a>
+		<a href="http://localhost/projet6/" id="htxtnone"><img id="firstimg"  src="<?php echo (get_stylesheet_directory_uri()."/images/Logo.png"); ?>" alt="Planty"></a>
 		
 			</nav>
 			<nav>
 				<a class="headHighlight headtxt" href="http://localhost/projet6/nous-renconter/">
 					Nous rencontrer
 				</a>
-				<button id="firstbutton" ><a href="http://localhost/projet6/precommander/" id="htxtnone">Commander</a></button>
+				<a href="http://localhost/projet6/precommander/" id="htxtnone"><button id="firstbutton" >Commander</button></a>
 			</nav>
 
 		</div>
 
 			<main id="main" class="site-main clr"<?php oceanwp_schema_markup( 'main' ); ?> role="main">
-
+</header>
 				
