@@ -6,8 +6,8 @@ Author URI: https://projet4amrane.themecloud.dev/wp-admin/theme-install.php?brow
 Template: oceanwp                     
 Version: 0.1.0
 */
-body{
-font-family: Syne;
+body {
+	font-family: Syne;
 }
 
 .directionRow {
@@ -26,9 +26,10 @@ font-family: Syne;
 }
 
 .headHighlight:hover {
-	color:black;
+	color: black;
 	font-weight: 700;
 	font-size: 13px;
+	text-decoration: none;
 }
 
 .headHighlight {
@@ -43,68 +44,115 @@ font-family: Syne;
 	font-family: Syne;
 }
 
-.classform{
+.headnav {
+	display: flex;
+	align-items: center;
+
+}
+
+.headnavtwo {
+display: none;
+
+
+}
+
+.classform {
 	font-family: Syne;
 	color: black;
 	font-size: 20px;
 	font-weight: 400;
 	width: 383px;
-    height: 71px;
+	height: 71px;
 }
 
-.msgform{
+.msgform {
 	font-family: Syne;
 	color: black;
 	font-size: 20px;
 	font-weight: 400;
 	width: 383px;
-    height: 237px;
+	height: 237px;
 }
 
-.buttform{
+.buttform {
 	font-family: Syne !important;
 	color: white !important;
 	background-color: #E0B9B4 !important;
 	align-items: center !important;
 }
 
-.classformtwo{
+.classformtwo {
 	font-family: Syne !important;
 	color: white !important;
 	font-size: 20px;
 	font-weight: 400;
 	width: 383px;
-    height: 71px;
+	height: 71px;
 }
 
-.demiblock{
-	border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 10%;
+.demiblock {
+	border-bottom-left-radius: 50% 10% !important;
+	border-bottom-right-radius: 50% 10% !important;
+	background-color: #ECE2DA;
+}
+
+.demiblocktwo {
+	border-bottom-left-radius: 50% 10% !important;
+	border-bottom-right-radius: 50% 10% !important;
+	background-color: #E3D9D0;
+}
+
+.duoblock {
+	border-bottom-left-radius: 70% 20% !important;
+	border-bottom-right-radius: 70% 20% !important;
+	background-color: #ECE2DA;
+}
+
+.trioblock {
+	border-bottom-left-radius: 20% 70% !important;
+	border-bottom-right-radius: 20% 70% !important;
+	background-color: #ECE2DA;
 }
 
 #headconteneur {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 80px;
+	
 }
 
 #firstimg {
-height: 19px;
-width: 201px;
-margin-left: 37px;
-
-
+	height: 19px;
+	width: 201px;
+	margin-left: 37px;
 }
 
-#htxtnone{
+#lastbutton:last-child {
+	height: 80px;
+	width: 236px;
+	text-align: unset;
+	background-color: #DC9F96;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	border: #DC9F96;
+	font-family: Syne;
+	margin-right: 0px;
+	align-items: center;
+	text-align: right;
+	display: flex;
+	justify-content: center;
+}
+
+#htxtnone {
 	text-decoration: none;
 	color: white;
 	font-family: Syne;
 }
 
 #firstbutton {
-	text-align: none;
+	text-align: unset;
 	background-color: #DC9F96;
 	color: white;
 	font-size: 16px;
@@ -112,12 +160,12 @@ margin-left: 37px;
 	line-height: 19px;
 	height: 80px;
 	width: 236px;
-    border: #DC9F96;
+	border: #DC9F96;
 
 }
 
-#firstbutton:hover{
-background: #C02E44;
+#lastbutton:last-child:hover {
+	background: #C02E44;
 }
 
 #ftxt {
@@ -127,57 +175,72 @@ background: #C02E44;
 }
 
 #valuezone {
-width: 51px;
-height: 56px;
-text-align: center;
-border-bottom-left-radius: 5px;
-border-top-left-radius: 5px;
-border: none;
+	width: 51px;
+	height: 56px;
+	text-align: center;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border: none;
 }
 
 
 #morebutton {
-width: 31px;
-height: 28px;
-color: white;
-background: #DC9F96 !important;
-border-top-right-radius: 5px !important;
-border-bottom-color: white !important;
-border: none;
+	width: 31px;
+	height: 28px;
+	color: white;
+	background: #DC9F96 !important;
+	border-top-right-radius: 5px !important;
+	border-bottom-color: white !important;
+	border: none;
 
 }
 
 
 #lessbutton {
 	width: 31px;
-height: 28px;
-color: white;
-background: #DC9F96 !important;
-border-bottom-right-radius: 5px !important;
-border-top-color: white;
-border: none;
+	height: 28px;
+	color: white;
+	background: #DC9F96 !important;
+	border-bottom-right-radius: 5px !important;
+	border-top-color: white;
+	border: none;
 }
 
 #okbutton {
-width: 70px;
-height: 56px;
-color: white;
-background: #E0B9B4;
-border-radius: 5px;
-border: none;
-margin-left: 10%;
+	width: 70px;
+	height: 56px;
+	color: white;
+	background: #E0B9B4;
+	border-radius: 5px;
+	border: none;
+	margin-left: 10%;
 }
 
-#okbutton:hover{
+#okbutton:hover {
 	background: #C02E44;
-	}
+}
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
-header{
-	
+.headnav {
+	display: flex;
+	flex-direction: column;
 }
 
+
+.headtxt{
+margin-right: 0px;
+text-align: center;
+
+}
+
+#headconteneur {
+flex-direction: column;
+}
+
+#firstimg {
+	margin-left: 0px;
+}
 
 
 }
